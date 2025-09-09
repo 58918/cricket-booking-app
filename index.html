@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ground Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 40px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ground Booking</h1>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required>
+
+      <label for="people">Number of People</label>
+      <input type="number" id="people" min="1" required>
+
+      <label for="time">Booking Time (hours)</label>
+      <select id="time">
+        <option value="1">1 Hour</option>
+        <option value="2">2 Hours</option>
+        <option value="3">3 Hours</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</body>
+</html>
